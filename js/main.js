@@ -26,10 +26,11 @@ const {value:nombre} = await Swal.fire({
     let name = document.querySelector(".name");
      //name.textContent = nombre;
      if (!nombre) {
-         name.textContent = "default user";
+         name.textContent = "default";
+         name.style.color = "white"
      } else {
         name.textContent = nombre;
-        name.style.color = "white"
+        name.style.color = "gold"
      }
 
 })();
@@ -98,9 +99,20 @@ class Item {
      botonEditar.addEventListener("click",function(){
      inputItem.disabled = !inputItem.disabled             
      if (true == inputItem.disabled){                      
-     botonEditar.innerHTML = '<i class="fas fa-lock"></i>'}  
+     botonEditar.innerHTML = '<i class="fas fa-lock"></i>';
+     Swal.fire({
+        title: 'Tarea Editada!',
+       icon:'success',
+       padding:'3rem',
+       timer:"2000",
+       timerProgressBar: true,
+       showConfirmButton: false,
+          })
+    }  
      else  {
-        botonEditar.innerHTML = '<i class="fas fa-lock-open"></i>'}
+        botonEditar.innerHTML = '<i class="fas fa-lock-open"></i>';
+       
+    }
     }) 
     
      botonRemover.addEventListener("click",function(){

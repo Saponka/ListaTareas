@@ -44,10 +44,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           name = document.querySelector(".name"); //name.textContent = nombre;
 
           if (!nombre) {
-            name.textContent = "default user";
+            name.textContent = "default";
+            name.style.color = "white";
           } else {
             name.textContent = nombre;
-            name.style.color = "white";
+            name.style.color = "gold";
           }
 
         case 7:
@@ -129,6 +130,14 @@ function () {
 
         if (true == inputItem.disabled) {
           botonEditar.innerHTML = '<i class="fas fa-lock"></i>';
+          Swal.fire({
+            title: 'Tarea Editada!',
+            icon: 'success',
+            padding: '3rem',
+            timer: "2000",
+            timerProgressBar: true,
+            showConfirmButton: false
+          });
         } else {
           botonEditar.innerHTML = '<i class="fas fa-lock-open"></i>';
         }

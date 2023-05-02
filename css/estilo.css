@@ -1,10 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Luckiest Guy', cursive;
     letter-spacing: 2px;
     background-color: teal;
     text-align: center;
 }
-
+nav{
+    background-color: cadetblue;
+    padding: 5px;
+}
 ul{
     display: flex;
     justify-content:space-around
@@ -47,6 +55,7 @@ color: whitesmoke
  opacity: 0.9;
 }
 .boton-editar{
+width: 50px;
 margin: 0px 5px;
 border: none;
 background: none;
