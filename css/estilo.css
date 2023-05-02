@@ -4,10 +4,22 @@ body{
     background-color: teal;
     text-align: center;
 }
+
+ul{
+    display: flex;
+    justify-content:space-around
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
 h1{
     color: whitesmoke;
     font-size: 60px;
-    
 }
 .input{
     width: 400px;
@@ -62,8 +74,10 @@ color: whitesmoke;
 background: none;
 outline: none;
 }
-.item{
+/* .item{
     margin-bottom: 10px;
+} */
+/* sweet alert propertys */
+.footerAlert{
+color: red;
 }
-
-
