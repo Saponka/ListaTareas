@@ -27,10 +27,10 @@ const {value:nombre} = await Swal.fire({
      //name.textContent = nombre;
      if (!nombre) {
          name.textContent = "default";
-         name.style.color = "white"
+         name.style.color = "white";
      } else {
         name.textContent = nombre;
-        name.style.color = "gold"
+        name.style.color = "gold";
      }
 
 })();
@@ -107,7 +107,7 @@ class Item {
        timer:"2000",
        timerProgressBar: true,
        showConfirmButton: false,
-          })
+          });
     }  
      else  {
         botonEditar.innerHTML = '<i class="fas fa-lock-open"></i>';
