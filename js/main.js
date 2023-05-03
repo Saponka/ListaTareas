@@ -131,8 +131,11 @@ class Item {
     }
 } 
 
- 
-  
+/* Swal.fire({
+    title:`Publicidad`,
+    text:'comprar',
+});
+   */
 
 
 
