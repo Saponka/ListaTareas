@@ -79,8 +79,6 @@ function chequearInput() {
     });
   } else {
     new Item(input.value);
-    localStorage.setItem("tarea", input.value);
-    input.value = "";
     Swal.fire({
       title: 'Tarea Agregada!',
       icon: 'success',
@@ -89,6 +87,8 @@ function chequearInput() {
       timerProgressBar: true,
       showConfirmButton: false
     });
+    localStorage.setItem("tarea", input.value);
+    input.value = "";
   }
 } //----------class Item------------------------------
 
