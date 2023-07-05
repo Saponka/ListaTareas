@@ -44,7 +44,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           name = document.querySelector(".name"); //name.textContent = nombre;
 
           if (!nombre) {
-            name.textContent = "default";
+            name.textContent = "default User";
             name.style.color = "white";
           } else {
             name.textContent = nombre;

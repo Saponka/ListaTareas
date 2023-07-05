@@ -26,7 +26,7 @@ const {value:nombre} = await Swal.fire({
     let name = document.querySelector(".name");
      //name.textContent = nombre;
      if (!nombre) {
-         name.textContent = "default";
+         name.textContent = "default User";
          name.style.color = "white";
      } else {
         name.textContent = nombre;
@@ -53,7 +53,9 @@ function chequearInput(){
             timer:"4000",
             timerProgressBar: true
         });
-    } else {                                        
+       
+    } else {    
+                                          
         new Item (input.value);
         input.value = "";
         Swal.fire({
@@ -67,9 +69,14 @@ function chequearInput(){
     }
 }  
 //----------class Item------------------------------
+
+
+
 class Item {
     constructor(nuevatarea){
-   this.crearDiv (nuevatarea)}
+        
+   this.crearDiv (nuevatarea)
+    }
    
      crearDiv(){
      let inputItem = document.createElement("input") 
@@ -129,6 +136,7 @@ class Item {
     })                     
       
     }
+
 } 
 
 /* Swal.fire({
