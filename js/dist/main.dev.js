@@ -49,6 +49,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           } else {
             name.textContent = nombre;
             name.style.color = "gold";
+            localStorage.setItem("user", nombre);
           }
 
         case 7:
@@ -78,6 +79,7 @@ function chequearInput() {
     });
   } else {
     new Item(input.value);
+    localStorage.setItem("tarea", input.value);
     input.value = "";
     Swal.fire({
       title: 'Tarea Agregada!',
@@ -169,8 +171,3 @@ setTimeout(function () {
     position: "bottom-end"
   });
 }, 10000);
-/* Swal.fire({
-    title:`Publicidad`,
-    text:'comprar',
-});
-   */

@@ -22,6 +22,7 @@ const {value:nombre} = await Swal.fire({
             padding:'3rem',
         });
     }
+    
 
     let name = document.querySelector(".name");
      //name.textContent = nombre;
@@ -31,6 +32,7 @@ const {value:nombre} = await Swal.fire({
      } else {
         name.textContent = nombre;
         name.style.color = "gold";
+        localStorage.setItem("user",nombre);
      }
 
 })();
@@ -57,6 +59,7 @@ function chequearInput(){
     } else {    
                                           
         new Item (input.value);
+        localStorage.setItem("tarea",input.value)
         input.value = "";
         Swal.fire({
             title: 'Tarea Agregada!',
@@ -65,7 +68,9 @@ function chequearInput(){
            timer:"2000",
            timerProgressBar: true,
            showConfirmButton: false,
-        })
+        });
+
+        
     }
 }  
 //----------class Item------------------------------
@@ -151,11 +156,7 @@ setTimeout(() => {
 
     });
  }, 10000);
-/* Swal.fire({
-    title:`Publicidad`,
-    text:'comprar',
-});
-   */
+
 
 
 
