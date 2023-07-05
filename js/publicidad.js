@@ -1,4 +1,4 @@
-
+/* 
 setTimeout(() => {
     Swal.fire({
         title:'Publicidad',
@@ -9,5 +9,5 @@ setTimeout(() => {
         position:"bottom-end"
 
     });
- }, 10000);
+ }, 10000); */
 
